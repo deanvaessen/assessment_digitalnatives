@@ -7,28 +7,51 @@
  * Dependencies
  */
 
-	//foo
+	// Shared styling
+	@import './../../stylesupport/index.scss';
 
- /**
-  * Styles
-  */
+/**
+* Styles
+*/
+
 body {
-  color: #fff;
-  background: #222;
+	color: #fff;
+	background: #222;
+	font-size: 100%; //62.5%
+	background-color: lightblue;
+	font-family:Arial;
+
+	h1 {
+		font-size: 150%;
+	}
+
+	h2 {
+		font-size: 130%;
+	}
+
+	h3 {
+		font-size: 120%;
+	}
+
+	h4 {
+		font-size: 110%;
+	}
 }
 
+/*
 .index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+	margin: 40px auto;
+	border-radius: 4px;
+	background: #fff;
+	display: block;
 }
 
 .index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+	margin: 20px auto;
+	padding: 15px 0;
+	text-align: center;
+	border: 1px solid #000;
+	border-width: 1px 0;
+	background: #666;
 }
+ */
