@@ -1,1 +1,3 @@
 19/10/2016 - 0.0.1: Generated project, brought in own esLint, changed component structure.
+19/10/2016 - 0.0.2: Fixed Sass webpack loader dependency issue, added form component. Set up skeleton for form component with library 'formous'
+19/10/2016 - 0.0.3:
