@@ -1,0 +1,1880 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hiring",
+				"hiringRound"
+			],
+			[
+				"path",
+				"pathToLodash〔variable〕"
+			],
+			[
+				"votes",
+				"votesApproved〔variable〕"
+			],
+			[
+				"JSON",
+				"JSON.stringify"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"query",
+				"queryKeywords[2"
+			],
+			[
+				"quer",
+				"queryKeywords[1"
+			],
+			[
+				"indi",
+				"indivizo_test"
+			],
+			[
+				"que",
+				"queryKeywords〔variable〕"
+			],
+			[
+				"api",
+				"apiSupport.js"
+			],
+			[
+				"body",
+				"bodyParser"
+			],
+			[
+				"img",
+				"imgArrayLSO"
+			],
+			[
+				"show",
+				"showCache"
+			],
+			[
+				"cached",
+				"cachedImages"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"stor",
+				"storeState"
+			],
+			[
+				"initialise",
+				"initialiseGame"
+			],
+			[
+				"positi",
+				"positionUpdate"
+			],
+			[
+				"Directo",
+				"DirectorHotline"
+			],
+			[
+				"game",
+				"gameplay"
+			],
+			[
+				"width",
+				"widthUpdate〔variable〕"
+			],
+			[
+				"post",
+				"postContent"
+			],
+			[
+				"marginSpa",
+				"marginSpaceStandard"
+			],
+			[
+				"margin",
+				"marginSpace"
+			],
+			[
+				"textHeight",
+				"textHeightStandard"
+			],
+			[
+				"text",
+				"textlength"
+			],
+			[
+				"active",
+				"activeFAQContent"
+			],
+			[
+				"nav",
+				"navbarHeight"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"booknow",
+				"bookNowButtonTop"
+			],
+			[
+				"header",
+				"headerLogoHeight〔variable〕"
+			],
+			[
+				"opa",
+				"opacityValue〔variable〕"
+			],
+			[
+				"hamburger",
+				"hamburger-menu"
+			],
+			[
+				"error",
+				"errorUnauthorisedAccess"
+			],
+			[
+				"ap",
+				"appendix"
+			],
+			[
+				"get",
+				"getIndexObj"
+			],
+			[
+				"correct",
+				"correctAnswer"
+			],
+			[
+				"correc",
+				"correctAnswer"
+			],
+			[
+				"mission",
+				"missionContent"
+			],
+			[
+				"misso",
+				"missionContent"
+			],
+			[
+				"collec",
+				"collectionStorage"
+			],
+			[
+				"ge",
+				"getItemRandom"
+			],
+			[
+				"word",
+				"wordLibExAdjective"
+			],
+			[
+				"generatorItem",
+				"generatorItems"
+			],
+			[
+				"genera",
+				"generateID"
+			],
+			[
+				"oser",
+				"observableArray"
+			],
+			[
+				"generator",
+				"generatorItemsChildren"
+			],
+			[
+				"obser",
+				"observableArray"
+			],
+			[
+				"collectio",
+				"collectionUpdate"
+			],
+			[
+				"answer",
+				"answer"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"items",
+				"items"
+			],
+			[
+				"rando",
+				"randomNum〔variable〕"
+			],
+			[
+				"item",
+				"itemIndex"
+			],
+			[
+				"observa",
+				"observableArray"
+			],
+			[
+				"childin",
+				"childIndexCompare"
+			],
+			[
+				"parent",
+				"parentkey"
+			],
+			[
+				"child",
+				"childIndex"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"missio",
+				"missionContent_item"
+			],
+			[
+				"motto",
+				"mottoNew"
+			],
+			[
+				"toast",
+				"toastActivation"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"rgb-",
+				"rgb-orange"
+			],
+			[
+				"rgb",
+				"rgb-russia-red"
+			],
+			[
+				"rgb-russia",
+				"rgb-russia-blue--old"
+			],
+			[
+				"data",
+				"databaseEmpty"
+			],
+			[
+				"conjugat",
+				"conjugationUserInput"
+			],
+			[
+				"wordsEXVerbs",
+				"wordsEXVerbsConjugations"
+			],
+			[
+				"transla",
+				"translateX"
+			],
+			[
+				"mobile",
+				"mobilecheck"
+			],
+			[
+				"kapstok_child",
+				"kapstok_child1--l"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"rgb-russ",
+				"rgb-russia-blue--old"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"ifra",
+				"iFrameLoaded"
+			],
+			[
+				"ifr",
+				"iFrameLoaded"
+			],
+			[
+				"kasp",
+				"kapstok_hoofd"
+			],
+			[
+				"partice",
+				"particlesJS"
+			],
+			[
+				"option",
+				"option1Exists"
+			],
+			[
+				"object",
+				"objectTargetKey"
+			],
+			[
+				"check",
+				"checkUnique"
+			],
+			[
+				"gra",
+				"grabOption"
+			],
+			[
+				"phrase",
+				"phraseKey"
+			],
+			[
+				"key",
+				"keyboard_container"
+			],
+			[
+				"validity",
+				"resultValidityConjugation"
+			],
+			[
+				"process",
+				"processedRequestKeyValue"
+			],
+			[
+				"request",
+				"requestCatch"
+			],
+			[
+				"grab",
+				"grabbedValue"
+			],
+			[
+				"getCon",
+				"getConjugationTypeCount"
+			],
+			[
+				"words",
+				"wordsC1M2Conjugations"
+			],
+			[
+				"learned",
+				"learnedDB"
+			],
+			[
+				"align",
+				"alignProgress"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"empt",
+				"wordsC1M1LearnedDueEmpty"
+			],
+			[
+				"tet",
+				"textRussianCard"
+			],
+			[
+				"empty",
+				"wordsC1M1ActiveEmpty"
+			],
+			[
+				"due",
+				"wordsC1M1LearnedDue"
+			],
+			[
+				"load",
+				"loadCardDeck"
+			],
+			[
+				"Learn",
+				"wordsC1M1LearnedDue"
+			],
+			[
+				"j",
+				"JSON"
+			],
+			[
+				"progress",
+				"progressC1M1"
+			],
+			[
+				"mark",
+				"markWordLearned"
+			],
+			[
+				"random",
+				"randomProperty"
+			],
+			[
+				"flash",
+				"flashcardC1M1ViewModel"
+			],
+			[
+				"input",
+				"inputField"
+			],
+			[
+				"dbq",
+				"dbQueryResult"
+			],
+			[
+				"dbQ",
+				"dbQueryResult"
+			],
+			[
+				"bo",
+				"Boolean"
+			],
+			[
+				"activate",
+				"activateLoadBlog"
+			],
+			[
+				"info__heading",
+				"info__heading--lead"
+			],
+			[
+				"aja",
+				"ajaxform"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"ju",
+				"justify-content"
+			],
+			[
+				"article",
+				"article__info"
+			],
+			[
+				"iframe",
+				"iframeactive"
+			],
+			[
+				"sec",
+				"section__portfolio"
+			],
+			[
+				"info__tree__horiz",
+				"info__tree__horizontal--html"
+			],
+			[
+				"section__portfo",
+				"section__portfolio__iframe"
+			],
+			[
+				"rgb-blue",
+				"rgb-blue--light"
+			],
+			[
+				"navRetu",
+				"navButtonReturnClicked"
+			],
+			[
+				"navRet",
+				"navButtonReturnClicked"
+			],
+			[
+				"portfolio",
+				"portfoliooverview"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/index.js",
+			"settings":
+			{
+				"buffer_size": 254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nrequire('normalize.css/normalize.css');\nrequire('./App.css');\n\nimport React from 'react';\n\n\nlet yeomanImage = require('../images/yeoman.png');\n\nclass AppComponent extends React.Component {\n  render() {\n    return (\n      <div className=\"index\">\n        <img src={yeomanImage} alt=\"Yeoman Generator\" />\n        <div className=\"notice\">Please edit <code>src/components/Main.js</code> to get started!</div>\n      </div>\n    );\n  }\n}\n\nAppComponent.defaultProps = {\n};\n\nexport default AppComponent;\n",
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/Main.js",
+			"file_size": 514,
+			"file_write_time": 131213701747984134,
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/App.scss",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/.eslintrc",
+			"settings":
+			{
+				"buffer_size": 4838,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 142.0,
+		"last_filter": "jsx",
+		"selected_items":
+		[
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"white sp",
+				"Trimmer: Trim leading whitespace."
+			],
+			[
+				"white",
+				"Snippet: white-space-collapse"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"origami",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JSX"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"create pan",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"dest",
+				"Layout: Destroy Current Pane"
+			],
+			[
+				"layout",
+				"Layout: Split Current Pane Horizontal"
+			],
+			[
+				"destr",
+				"Layout: Destroy Current Pane"
+			],
+			[
+				"pane ",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"split",
+				"Layout: Split Current Pane Horizontal"
+			],
+			[
+				"pane",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"destro",
+				"Layout: Destroy Current Pane"
+			],
+			[
+				"create",
+				"Origami: Create and Focus Pane on the Right"
+			],
+			[
+				"origami zoo",
+				"Origami: Zoom Current Pane"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"semicolon",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ore",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"docbl",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"comment",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"syn",
+				"Set Syntax: SCSS"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"scope",
+				"Scope Hunter: Show Scope Under Cursor(s)"
+			],
+			[
+				"doxy",
+				"DoxyDoxygen: Comment Wrap"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"blockr",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Themr: List themes"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"jshi",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"pack",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"format cod",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"\\",
+				"Origami: Zoom/Unzoom Current Pane (Toggle Zoom)"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"prettif",
+				"HTMLPrettify"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"autop",
+				"Autoprefix CSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"syntax",
+				"Set Syntax: Sass"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"orig",
+				"Origami: Save Current Layout"
+			],
+			[
+				"origa",
+				"Origami: Create Pane Below"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"vmem",
+				"View: Toggle Minimap"
+			]
+		],
+		"width": 568.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/styles/App.css",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/archive/indivizo-test/src/karma.conf.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/process.jsx",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/stylesupport/partials/_mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/stylesupport/index.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PartyScreen/PartyScreen.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/root.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PersonElement/PersonElement.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PersonElement/PersonElement.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PartyScreen/PartyScreen.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/root.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/process.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/Partyscreen/Partyscreen.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/Partyscreen/Partyscreen.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/meta/react-partyscreenSublime.sublime-project",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/stylesupport/partials/_tooltips.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/stylesupport/partials/_variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/components/root.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/components/root.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/components/PersonElement/PersonElement.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-highscore/code/src/components/PersonElement/PersonElement.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/partials/_helpers.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/partials/_buttons.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/partials/_variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/partials/_tooltips.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/partials/_mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/components/root.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/components/root.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/stylesupport/index.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/components/PersonElement/PersonElement.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/persongenerator/code/src/components/PersonElement/PersonElement.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/store/actions/userActions.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/partials/_variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/partials/_helpers.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/index.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/cfg/defaults.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/bourbon-sass-loader/config/example.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/cfg/dev.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/cfg/base.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/cfg/dist.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/webpack.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/package.json",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/models/awesomeperson.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/store/actions/utils.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/models/dummy.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/api/apiSupport.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/server_back.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/server_front.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/partials/_mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/react-lightweight-tooltip/dist-modules/components/tooltip.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/partials/_tooltips.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserTestResult/UserTestResult.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/root.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/models/dummy_names.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserTestResult/UserTestResult.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/root.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/vendor/tipsy.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/config/dist.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/config/base.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/config/dev.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/SignUp/SignUp.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/SignUp/SignUp.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/models/awesomeperson_avatars.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/react-lightweight-tooltip/style.css",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/partials/_buttons - Copy.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/store/actions/utils_avatarrepo.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/vendor/utility-belt.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/vendor/balloon.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/react-lightweight-tooltip/dist-modules/index.js",
+		"/C/Users/Dean/AppData/Local/Temp/7zO44B9840A/tipsy.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/vendor/tooltips.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/stylesupport/vendor/index.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/archive/promise.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/OverlayMagician/product/src/scss/index.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/freelance/2016/minoohouse/srv/htdocs/wp/wp-content/themes/minooHouse/assets/styles/partials/_mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/freelance/2016/minoohouse/srv/htdocs/wp/wp-content/themes/minooHouse/assets/styles/partials/_variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/freelance/2016/minoohouse/srv/htdocs/wp/wp-content/themes/minooHouse/assets/styles/partials/_helpers.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/bourbon.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/bourbon-sass-loader/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/bourbon-sass-loader/config/bourbon.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/node_modules/bourbon-sass-loader/config/neat.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserRequirementsScore/UserTestResult.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserRequirementsScore/UserTestResult.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserRequirementsScore/UserRequirementsScore.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/components/UserRequirementsScore/UserRequirementsScore.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/Resources/Apps/Sublime/Data/Packages/User/Preferences.sublime-settings",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/.gitignore",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/nodemon.json",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/OverlayMagician/serve/nodemon.json",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/server.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/src/models/awesomeperson.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/api/apisupport.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/code/cfg/test.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/config/dist.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/config/test.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/dist.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/defaults.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/dev.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/base.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/test.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/UserRequirementsScore/UserRequirementsScore.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/root.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/models/awesomeperson.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/UserRequirementsScore/UserRequirementsScore.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/root.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/actions/userActions.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/actions/utils.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/api/apisupport.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/webpack.config.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/server.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/backend/backend.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/store.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/models/awesomeperson.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/reducers/userReducer.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/store/getters.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/store/actions.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/store/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/services/account/find.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/utils/loader.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/archive/services/account/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/reducers/reducer.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/OverlayMagician/product/src/js/index.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/services/account/find.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/store/mutation-types.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"personelement",
+			"",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\persongenerator\\code",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Challenges\\indivizo-test\\src",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\OverlayMagician\\product\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\OverlayMagician\\serve\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\OverlayMagician\\product\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\OverlayMagician\\product\\src\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Personal\\OverlayMagician\\product\\src\\scss",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse\\assets\\styles",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse\\assets",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse\\assets\\styles\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse\\assets\\styles\\partials",
+			"<open folders>",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\personal\\heartofgold\\src\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\personal\\heartofgold\\src\\src\\components",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\freelance\\2016\\minoohouse\\srv\\htdocs\\wp\\wp-content\\themes\\minooHouse",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app\\pages",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app\\components",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app\\store\\scss",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app\\store\\modules\\",
+			"C:\\Users\\Dean\\Downloads\\jwt-example-next\\resources\\frontend\\src\\app",
+			"C:\\Users\\Dean\\Downloads\\jwt-example-next",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\app",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\app",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\assets\\scss\\vendor\\fontawesome\\scss",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\assets",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\app\\",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut\\app\\views",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut\\public\\css",
+			"D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\gibbernaut\\src\\gibbernaut-vue\\src\\assets\\scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"empty",
+			"partymembers",
+			"user",
+			"class=",
+			"personelement",
+			"PersonElement",
+			"UserTestResult",
+			"indivizo",
+			"indizo",
+			"UserTestResult",
+			"indivizo",
+			"background",
+			"avatar",
+			"data",
+			"console.log",
+			"votes",
+			"add",
+			"hide",
+			"verticl",
+			"'",
+			",",
+			"'",
+			"wrapper",
+			"z-inde",
+			"09",
+			"z-i",
+			"text-",
+			"plugins",
+			"docs",
+			"src",
+			"mongoose",
+			"open",
+			"port",
+			"main.js",
+			"Slider_OffsetY",
+			"slider_offsetX",
+			"slider_opacity",
+			"slider_size",
+			".local",
+			"store.state.",
+			"store.state",
+			"showCache",
+			".state",
+			".lso",
+			"pageElement",
+			"store.init",
+			".show",
+			"defineProperty",
+			"saveObject",
+			"store.show",
+			".show",
+			".storage",
+			"reset",
+			"store.",
+			"createstore",
+			"cache",
+			"hideui",
+			"previewIMG__imgList",
+			"input",
+			"#overlayMagicianButtons__input",
+			"__right",
+			"overlayMagician__buttons",
+			"overlayMagician__buttons__statistics",
+			"__buttons",
+			"overlayMagician__buttons__right",
+			"buttonRow",
+			"\"",
+			"tabs",
+			"';\n",
+			"this.store",
+			"support.",
+			"change",
+			"container",
+			"contianer",
+			"hei",
+			"$",
+			"imgwit",
+			"imgwith",
+			"start",
+			"\"",
+			"ignore",
+			"var content = requi",
+			"var content",
+			"content",
+			"var content",
+			"content",
+			"var content =",
+			"globalStore",
+			"global",
+			"globalstore",
+			"message",
+			".get",
+			"module.",
+			"hot",
+			"module.hot.accept();",
+			"entry",
+			"10",
+			"console.log",
+			"title",
+			"655",
+			"782",
+			"46px",
+			"782",
+			"782px",
+			"782",
+			"400",
+			"max-width",
+			"faq",
+			"FAQ",
+			"margin-top",
+			"site-header",
+			"550px",
+			"-10",
+			"67px,",
+			"67",
+			"-10",
+			".meta",
+			"initialiseGame",
+			".character",
+			"character.",
+			"gameinit",
+			"character",
+			"game",
+			"props.",
+			"actor.",
+			"context",
+			"History",
+			"store"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"className=",
+			"PartyScreen",
+			"PersonElement",
+			"personelement",
+			"personelemnt",
+			"PersonElement",
+			";",
+			"",
+			"code",
+			"Slider_OffsetY",
+			"Slider_OffsetX",
+			"Slider_Opacity",
+			"Slider_Size",
+			"overlayMagician__imgManipulation",
+			"overlayMagician__imgUpload",
+			"overlayMagician__toolbar",
+			"toolbar",
+			"'",
+			"this.state",
+			"//console.log",
+			"1192",
+			"1180",
+			"$",
+			"$.",
+			"",
+			"errorUnauthorisedAccess",
+			"config.jwtSecret",
+			"jwtSecret",
+			"errorUnauthorisedAccess",
+			"</router-link>",
+			"<router-link to=",
+			"uchebnik",
+			"//console.log",
+			"console.log",
+			"'",
+			"String",
+			"\"</span>",
+			"<span class=\"text-ru\">\"",
+			"\"",
+			"//console.log",
+			"<em>(",
+			")</em>",
+			"<em>(",
+			"wordsLibExAdjectives",
+			"textItemCorrect",
+			"resultValidityAnswer",
+			"showItemNext",
+			"showResultAnswer",
+			"itemCorrect",
+			"answerCorrect",
+			"this.userInput ",
+			"this.itemTypeCount",
+			"itemTypeCount",
+			"textItemCorrect",
+			"currentTextItemCorrect",
+			"textAnswerCorrect",
+			"currentTextAnswerCorrect",
+			"wordsLibExNounsLearned",
+			"wordsLibExNounsConjugations",
+			"wordsLibExNounsReservoir",
+			"libExNounsViewModel",
+			"wordsEXVerbs",
+			"processWordDatabank.markWordLearnedIncludeMutation(this.textRussianCard, this.queryConjugationType, this.textConjugationCorrect, wordsEXVerbsActive, wordsEXVerbsLearned, wordsEXVerbsConjugations);",
+			"libExVerbsVM",
+			"wordsEXVerbsLearned",
+			"wordsEXVerbsActive",
+			"markWordLearnedC1M2(this.textRussianCard, this.queryConjugationType, this.textConjugationCorrect, wordsEXVerbsActive, wordsEXVerbsLearned, wordsEXVerbsConjugations);",
+			"markWordLearnedC1M2(this.textRussianCard, this.queryConjugationType, this.textConjugationCorrect, wordsEXVerbsActive, wordsEXVerbsLearned);",
+			"EXVerbsActive",
+			"wordsEXVerbsActive",
+			"class=\"btn btn-missionplate--item\"><span class=\"fa fa-check\">",
+			"<span class=\"fa fa-object-group\"></span>&nbsp; Mission",
+			"<!-- <p><a href=\"/launchpad/campaign1/mission3\" class=\"btn btn-missionplate_freestanding\"><span class=\"fa fa-object-group\"></span>&nbsp; Drawing board</a></p> -->",
+			"",
+			"missionplate_missionbanner",
+			"//console.log(",
+			"(blue bar fills)",
+			"_c1_r",
+			"btn-mission--right--progress",
+			"btn-mission--right--stat",
+			"resultCheckValidity",
+			"resultValidityCheck",
+			"answerCorrectA3",
+			"answerCorrectA1",
+			"answerCorrectA2",
+			"C1M5OptionsActive",
+			"C1M5OptionsReservoir",
+			"C1M5OptionsActive",
+			"C1M5optionsActive",
+			"C1M5optionsReservoir",
+			"wordsC1M5AnswerActive",
+			"wordsC1M5PronounsReservoir",
+			"this.correctAnswer",
+			"getCorrectPronoun",
+			"moveObject",
+			"wordsC1M5PronounsReservoir",
+			"C1M4",
+			"markWordLearnedC1M2",
+			"C1M3",
+			"write.val",
+			"'",
+			"wordsEXVerbsConjugations",
+			"wordsEXVerbsLearned",
+			"wordsEXVerbsActive",
+			"wordsEXFlashLearned",
+			"wordsEXFlashActive",
+			"libExFlashcardsVM",
+			"<strong>just</strong>",
+			"processWordDatabank.markWordLearnedC1M2",
+			"campaign",
+			"campaignview",
+			"<p",
+			"</p>",
+			"<p>",
+			"markWordLearnedC1M2",
+			"markWordLearnedC1M1",
+			"flashcardC1M3ViewModel",
+			"showFinish",
+			"missionReset",
+			"missionFinish",
+			"missionReset",
+			"wordsC1M1Active",
+			"wordsC1M1Learned",
+			"wordsC1M1DBLearned",
+			"document.getElementById('section__contact').style.marginTop =  \"300px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"400px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"200px\";",
+			"deActivateLoadIframe"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/Main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/App.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										320,
+										321
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										187,
+										188
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Sunrise Theme/Langs/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/.eslintrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4520,
+								4520
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4834,
+										4835
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										458,
+										459
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2910.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 58.0
+	},
+	"input":
+	{
+		"height": 79.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			],
+			[
+				0,
+				1,
+				3,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.33,
+			0.66,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 122.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.scopehunter.results":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "",
+	"project": "digitalnativesSublime.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"src\\gibbernaut-vue\\build\\webpack.base.conf.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"dfw_is_in_fs": true
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 84.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
