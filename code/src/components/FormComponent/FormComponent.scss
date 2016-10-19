@@ -18,19 +18,26 @@
 	width: 20%;
 	margin: 10%  auto;
 	border: 2px dashed white;
-	@include rem(width, 250px)
+	@include rem(width, 450px)
 	@include rem(padding, 35px 35px);
 
 	.FormComponent__input {
-		margin: 0 auto;
-		@include rem(width, 250px);
-		@include rem(margin, 40px 0 20px 0);
+		position: relative;
+		margin: 10% auto;
+		width: 100%;
 
-		div {
+		.FormComponent__arabic {
 			input {
 				width: 100%;
 				@include rem(margin, 5px 0 5px 0);
 				@include rem(padding, 5px 5px);
+			}
+		}
+
+		.FormComponent__english {
+			@include rem(margin, 0 0 40px 0);
+			h5, p {
+				display: inline-block;
 			}
 		}
 	}

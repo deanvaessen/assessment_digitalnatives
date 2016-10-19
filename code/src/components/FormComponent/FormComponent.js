@@ -28,6 +28,7 @@ class FormComponent extends React.Component {
 		super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.translateInput = this.translateInput.bind(this);
+		this.mutateComponent = this.mutateComponent.bind(this);
 	}
 
 	componentWillMount() {
@@ -38,7 +39,6 @@ class FormComponent extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-			// Set default form values (might be appropriate in a different method
 			this.props.setDefaultValues({
 				arabic: '',
 				english:  '',
@@ -52,42 +52,48 @@ class FormComponent extends React.Component {
 		}
 
 		if (!formStatus.valid) {
-			alert('Please address the errors in the form.');
+			alert('Please fill in a number');
 			return;
 		}
 
-		if (this.props.fields.arabic.value != '' && this.props.fields.english.value != '') {
-			console.log(this.props.fields)
-			alert('You filled in both elements, please clear one.');
-			return;
-		}
-
-		// All good! Do something with fields.name.value and fields.arabic.value
-
+		// No errors found, continue.
 
 		// Initial state
 		let fieldState = this.props.fields;
 
 		// Mutate
-		fieldState.arabic.value = 'test';
-		fieldState.english.value = 'test';
+		this.translateInput(fieldState, (result) => this.mutateComponent(result));
 
-		// Pass back in
-		this.setState(this.props.fields.arabic = {
-			value : fieldState.arabic.value,
-			events : fieldState.arabic.events,
-			valid : fieldState.arabic.valid,
-		});
 
-		this.setState(this.props.fields.english = {
-			value : fieldState.english.value,
-			events : fieldState.english.events,
-			valid : fieldState.english.valid,
-		});
 	}
 
 	translateInput(input, cb){
+		console.log("FormComponent__translateInput: init payload:");
+		console.log(input);
 
+		const arabic = input.arabic.value;
+
+		input.english.value = 'sometranslation';
+
+		cb(input);
+	}
+
+	mutateComponent(payload){
+		console.log("FormComponent__mutateComponent: init payload:");
+		console.log(payload);
+
+		// Pass back into the view
+		this.setState(this.props.fields.arabic = {
+			value : payload.arabic.value,
+			events : payload.arabic.events,
+			valid : payload.arabic.valid,
+		});
+
+		this.setState(this.props.fields.english = {
+			value : payload.english.value,
+			events : payload.english.events,
+			valid : payload.english.valid,
+		});
 	}
 
 	render() {
@@ -95,7 +101,6 @@ class FormComponent extends React.Component {
 			fields: { arabic, english },
 			formSubmit,
 		} = this.props;
-
 		return (
 			<div className="FormComponent__container">
 				<div className="FormComponent__title"><h1>Translation, please</h1></div>
@@ -113,13 +118,7 @@ class FormComponent extends React.Component {
 								<ErrorText { ...arabic.failProps } />
 							</div>
 							<div className="FormComponent__english" >
-								<input
-									placeholder="English"
-									type="text"
-									value={english.value}
-									{ ...english.events }
-								/>
-								<ErrorText { ...english.failProps } />
+								<h5>Your translation:</h5> <p>{this.props.fields.english.value}</p>
 							</div>
 						</div>
 					</div>
@@ -145,6 +144,15 @@ const formousOptions = {
 					test(value) {
 						return /^[a-zA-Z-]*$/.test(value);
 					},
+				},
+				{
+					critical: true,
+					failProps: {
+						errorText: 'English should be in letters!',
+					},
+					test(value) {
+						return /^[a-zA-Z-]*$/.test(value);
+					},
 				}
 			],
 		},
@@ -160,15 +168,6 @@ const formousOptions = {
 						return /^\d*$/.test(value);
 					},
 				},
-/*				{
-					critical: false,
-					failProps: {
-						errorText: 'Are you sure you\'re that old? :o',
-					},
-					test(value) {
-						return +value < 120;
-					},
-				},*/
 			],
 		},
 	},
