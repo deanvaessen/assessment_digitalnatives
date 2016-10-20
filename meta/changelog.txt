@@ -6,3 +6,4 @@
 20/10/2016 - 0.0.6: Added sketch for "in between labels" (e.g: "one THOUSAND AND three"). See "addThousands".
 20/10/2016 - 0.0.7: Translation OK!
 20/10/2016 - 0.0.8: Cleaned up, fixed last minute bugs
+20/10/2016 - 0.0.9: Misc cleanup.
