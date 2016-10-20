@@ -71,13 +71,12 @@ class FormComponent extends React.Component {
 
 	mutateComponent(payload){
 		console.log("FormComponent__mutateComponent: init payload:");
-		console.log(payload);
 
 		// Pass back into the view
 		this.setState(this.props.fields.english = {
 			value : payload.english.value,
-			events : payload.english.events,
-			valid : payload.english.valid,
+			events : this.props.fields.english.events,
+			valid : this.props.fields.english.valid,
 		});
 	}
 

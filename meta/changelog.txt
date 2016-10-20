@@ -2,3 +2,8 @@
 19/10/2016 - 0.0.2: Fixed Sass webpack loader dependency issue, added form component. Set up skeleton for form component with library 'formous'
 19/10/2016 - 0.0.3: Fleshed out component structure. Form submittion, clear form, mutating form value.
 19/10/2016 - 0.0.4: Component logic cleaned up.
+20/10/2016 - 0.0.5: Translation 0-999 OK.
+20/10/2016 - 0.0.6: Added sketch for "in between labels" (e.g: "one THOUSAND AND three"). See "addThousands".
+
+
+Note: formous does not det

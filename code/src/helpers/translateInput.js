@@ -26,10 +26,39 @@ let numberToWords = (input, callback) => {
 				'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
 			],
 
-			thousands : [
+/*			thousands : [
 				'', 'thousand', 'million', 'billion', 'trillion', 'quadrillion',
 				'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion'
-			]
+			]*/
+
+			thousands(lengthAfter) {
+				const x = lengthAfter;
+
+				switch (true) {
+					case (x >= 3 && x < 6):
+						return ' thousand and ';
+					case (x < 9):
+						return ' million and ';
+					case (x < 12):
+						return ' billion and ';
+					case (x < 15):
+						return ' trillion and ';
+					case (x < 18):
+						return ' quadrillion and ';
+					case (x < 21):
+						return ' quintillion and ';
+					case (x < 24):
+						return ' sextillion and ';
+					case (x < 26):
+						return ' octillion and ';
+					case (x < 29):
+						return ' nonillion and ';
+					case (x > 29):
+						return 'Dude, big number. Tone it down.';
+					default:
+						return '';
+				}
+			}
 		};
 
 		const helpers = {
@@ -66,6 +95,30 @@ let numberToWords = (input, callback) => {
 				// Attach the tens and singles if available, otherwise just take the singles
 					wordDefinitions.singles[tens + singles] || wordDefinitions.singles[singles]
 				].join(''); //Join them
+			},
+
+			addThousands(originalArray, index) {
+				let thousandsArray = helpers.reverse(originalArray);
+
+				thousandsArray = helpers.divideInto(thousandsArray, 3);
+
+				thousandsArray = helpers.reverse(thousandsArray);
+				console.log('thousandsArray: ', thousandsArray);
+
+				let itemCount = 0;
+
+				thousandsArray.forEach(function (item, index) {
+					console.log(item, index);
+					itemCount = itemCount + item.length;
+				});
+
+				console.log('done, you have ' + itemCount + ' items in your array');
+
+				let firstThousand = wordDefinitions.thousands(itemCount - 1);
+
+				console.log(firstThousand);
+
+				//let word =
 			}
 		};
 
@@ -74,10 +127,12 @@ let numberToWords = (input, callback) => {
 	*/
 
 		// 1. Throw the entire input into an array
+		const originalArray = [...arabic];
 		let inputArray = [...arabic];
 
 
-		// 2. Reverse it so that it is spaced into neat blocks and only the first array has gaps
+		// 2. Reverse it so that it is spaced into neat blocks and only the first section of the number has gaps in the array
+		// (so that we can name it properly when we add thousands)
 		inputArray = helpers.reverse(inputArray);
 
 		// 3. Divide it into chunks
@@ -94,7 +149,7 @@ let numberToWords = (input, callback) => {
 		let translation = inputArray.map(helpers.matchDefinitions);
 
 		// 5. Add thousands
-		//let translation = inputArray.map(helpers.matchDefinitions);
+		helpers.addThousands(originalArray);
 
 		// 6. Reverse it again
 		translation = helpers.reverse(translation);
@@ -103,7 +158,7 @@ let numberToWords = (input, callback) => {
 
 		const result = {
 			english : {
-				value : translation
+				value : translation.join(' ')
 			}
 		};
 
