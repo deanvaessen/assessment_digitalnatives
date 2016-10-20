@@ -19,9 +19,6 @@ import FormComponent from './../FormComponent/FormComponent';
  * Component
  */
 
-	// let yeomanImage = require('../../images/yeoman.png');
-	//<img src={yeomanImage} alt="Yeoman Generator" />
-
 class AppComponent extends React.Component {
 
 	render() {

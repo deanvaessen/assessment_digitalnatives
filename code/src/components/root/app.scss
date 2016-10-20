@@ -9,17 +9,18 @@
 
 	// Shared styling
 	@import './../../stylesupport/index.scss';
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /**
 * Styles
 */
 
 body {
-	color: #fff;
+	color: #262626;
 	background: #222;
 	font-size: 100%; //62.5%
 	background-color: lightblue;
-	font-family:Arial;
+	font-family: 'Open Sans Regular', sans-serif;
 
 	h1 {
 		font-size: 150%;
@@ -41,21 +42,3 @@ body {
 		font-size: 100%;
 	}
 }
-
-/*
-.index img {
-	margin: 40px auto;
-	border-radius: 4px;
-	background: #fff;
-	display: block;
-}
-
-.index .notice {
-	margin: 20px auto;
-	padding: 15px 0;
-	text-align: center;
-	border: 1px solid #000;
-	border-width: 1px 0;
-	background: #666;
-}
- */

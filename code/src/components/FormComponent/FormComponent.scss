@@ -13,69 +13,80 @@
  /**
   * Styles
   */
+.FormComponent__outerContainer{
+		margin: 10%  auto;
+		@include rem(width, 450px)
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
 
-.FormComponent__container {
-	width: 20%;
-	margin: 10%  auto;
-	border: 2px dashed white;
-	@include rem(width, 450px)
-	@include rem(padding, 35px 35px);
+	.FormComponent__title {
+		text-align: center;
+		@include rem(padding, 20px 20px);
+		background: #C87D08;
+		color: white;
+	}
 
-	.FormComponent__input {
-		position: relative;
-		margin: 10% auto;
-		width: 100%;
+	.FormComponent__innerContainer {
+		border: 2px dashed white;
+		background: white;
+		@include rem(padding, 10px 35px 35px 35px);
 
-		.FormComponent__arabic {
-			input {
-				width: 100%;
-				@include rem(margin, 5px 0 5px 0);
-				@include rem(padding, 5px 5px);
+		.FormComponent__input {
+			position: relative;
+			margin: 10% auto;
+			width: 100%;
+
+			.FormComponent__arabic {
+				input {
+					width: 100%;
+					@include rem(margin, 5px 0 5px 0);
+					@include rem(padding, 5px 5px);
+				}
+			}
+
+			.FormComponent__english {
+				@include rem(margin, 30px 0 40px 0);
+				h5, p {
+					display: inline-block;
+				}
+				p{
+					margin: 0;
+				}
+
+				.hidden { display:none; }
 			}
 		}
+	}
 
-		.FormComponent__english {
-			@include rem(margin, 0 0 40px 0);
-			h5, p {
-				display: inline-block;
-			}
+	.FormComponent__buttons {
+		button {
+			color: #FFFFFF;
+			text-shadow:0px 1px 0px #8E8115;
+			@extend .buttonDefault;
+		}
+
+		button:nth-of-type(1) {
+			@include rem(margin, 0 5px 0 0);
+			background:linear-gradient(to bottom, #70FA3A 5%, #62BB0C 100%);
+			background-color:#70FA3A;
+			border:1px solid #10CA3C;
+		}
+
+		button:nth-of-type(1):hover {
+			background:linear-gradient(to bottom, #47D012 5%, #ABE375 100%);
+			background-color:#47D012;
+		}
+
+		button:nth-of-type(2) {
+			background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+			background-color:#ffec64;
+			border:1px solid #ffaa22;
+		}
+
+		button:nth-of-type(2):hover {
+			background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+			background-color:#ffab23;
 		}
 	}
-}
-
-.FormComponent__buttons {
-	button {
-		color: #FFFFFF;
-		text-shadow:0px 1px 0px #8E8115;
-		@extend .buttonDefault;
-	}
-
-	button:nth-of-type(1) {
-		@include rem(margin, 0 5px 0 0);
-		background:linear-gradient(to bottom, #70FA3A 5%, #62BB0C 100%);
-		background-color:#ffec64;
-		border:1px solid #10CA3C;
-	}
-
-	button:nth-of-type(1):hover {
-		background:linear-gradient(to bottom, #47D012 5%, #ABE375 100%);
-		background-color:#ffab23;
-	}
-
-	button:nth-of-type(2) {
-		background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-		background-color:#ffec64;
-		border:1px solid #ffaa22;
-	}
-
-	button:nth-of-type(2):hover {
-		background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-		background-color:#ffab23;
-	}
-}
-
-.FormComponent__title {
-	text-align: center;
 }
 
 

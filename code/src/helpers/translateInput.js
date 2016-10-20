@@ -5,9 +5,6 @@
 
 let numberToWords = (input, callback) => {
 
-	console.log('translateInput: init payload:');
-	//console.log(input);
-
 	const arabic = input.arabic.value;
 
 	/**
@@ -25,11 +22,6 @@ let numberToWords = (input, callback) => {
 				'', '', 'twenty', 'thirty', 'forty',
 				'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
 			],
-
-/*			thousands : [
-				'', 'thousand', 'million', 'billion', 'trillion', 'quadrillion',
-				'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion'
-			]*/
 
 			thousands(lengthAfter) {
 				const x = lengthAfter;
@@ -79,7 +71,6 @@ let numberToWords = (input, callback) => {
 
 			matchDefinitions([singles, tens, hundreds]) {
 				// Array position defines what it is. 0 = singles, 1 = tens, 2 = hundreds
-				console.log(singles, tens, hundreds);
 
 				return [
 				// Result for the hundreds
@@ -99,43 +90,49 @@ let numberToWords = (input, callback) => {
 				].join(''); //Join them
 			},
 
-			addThousands(originalArray, index) {
+			addInBetweens(originalnput, index) {
+				/*
+				 * Primer: Here we add the "in-between-labels".
+				 * To do this, find the amount of array items *after* the current block
+				 * This way you find out how big the number is that you're describing
+				 */
 
-				console.log(originalArray);
+				// 1. Define an array that we will use to find out where we need to add a label
+				let labelArray = helpers.reverse(originalnput);
 
-				// Define the entire thousandsArray
-				let thousandsArray = helpers.reverse(originalArray);
+				labelArray = helpers.divideInto(labelArray, 3);
+				labelArray = helpers.reverse(labelArray);
 
-				thousandsArray = helpers.divideInto(thousandsArray, 3);
-				thousandsArray = helpers.reverse(thousandsArray);
-				console.log('thousandsArray: ', thousandsArray);
-
-
+				// 2. Count the amount of items that we have in the arrays
 				let itemCount = 0;
 
-				thousandsArray.forEach(function (item, index) {
-					console.log(item, index);
+				labelArray.forEach(function (item, index) {
 					itemCount = itemCount + item.length;
 				});
 
-				// Remove the array that you want to find the trail of from the count
-				// (so you know how many are AFTER it)
-				itemCount = itemCount - thousandsArray[index].length;
+				// 3. Find out how many items there are *after* this  block
 
-				console.log('done, you have ' + itemCount + ' items after your current array item');
+				// Remove the array block itself from the total to find remaining after it
+				itemCount = itemCount - labelArray[index].length;
 
-				const inbetween = wordDefinitions.thousands(itemCount);
-
-				console.log(inbetween);
-				return inbetween;
-
-				//let word =
+				// 4. Match the value to a label and return it
+				return wordDefinitions.thousands(itemCount);
 			}
 		};
 
 	/**
 	* Process the input
 	*/
+
+		/*
+		 * Primer
+		 * This function takes an input array, reverses it (to free up the first digit) and divides it into blocks of 3.
+		 * It then tries to map definitions based on the number that has and adds extra words, see below.
+		 * Blocks of three because that makes it easy to translate.
+		 * English translations can be thought of as descriptions for blocks of 3 numbers
+		 * Aditionally, there are "in-between-labels" such as "thousand and"
+		 * E.g.: "400 240" -> "fourhundred *thousand and*  twohundred fourty"
+		 */
 
 		// 1. Throw the entire input into an array
 		const originalArray = [...arabic];
@@ -146,9 +143,8 @@ let numberToWords = (input, callback) => {
 		// (so that we can name it properly when we add thousands)
 		inputArray = helpers.reverse(inputArray);
 
-		// 3. Divide it into chunks
+		// 3. Divide it into chunks and fill it to not mess up the mapping later on
 		inputArray = helpers.divideInto(inputArray, 3);
-		console.log('divided: ', inputArray);
 
 		inputArray.map(function (item) {
 			while (item.length != 3){
@@ -156,37 +152,28 @@ let numberToWords = (input, callback) => {
 			}
 		});
 
-		console.log(inputArray);
-
 		// 4. Map each item to a definition
 		let translation = inputArray.map(helpers.matchDefinitions);
 
-		// 5. Add thousands
-		//helpers.addThousands(originalArray);
-
-		// 6. Reverse it again
+		// 5. Reverse it again
 		translation = helpers.reverse(translation);
 
-		// Filter empty
+		// 6. Filter empty
 		translation = translation.filter(Boolean);
-		console.log('teeeest ', translation);
 
 		// 7. Add in-between-labels
 		const translationItems = translation.length;
 
 		translation.forEach(function (item, index) {
-			console.log('---------');
-			console.log(translationItems);
-			console.log(index);
-			console.log('---------');
-			//If it's the last item, don't run the check (unless there is only one)
+			// If it's the last item, don't run the check (unless there is only one)
 			if (index + 1 == translationItems && translationItems != 1){
 				return;
 			}
-			translation.splice(index + 1, 0, helpers.addThousands(originalArray, index));
+
+			// Plug in the labels
+			translation.splice(index + 1, 0, helpers.addInBetweens(originalArray, index));
 		});
 
-		console.log(translation);
 
 		// 8. Clean up
 		if (translation.length == 2) {
@@ -197,7 +184,6 @@ let numberToWords = (input, callback) => {
 
 			// Remove duplicate whitespaces
 			translation = translation.replace(/\s+/g, ' ');
-			console.log(translation);
 		} else {
 			translation = translation.join(' ');
 			translation = translation.replace(/\s+/g, ' ');
@@ -211,19 +197,5 @@ let numberToWords = (input, callback) => {
 
 		callback(result);
 };
-
-//numberToWords(120000)
-//12 | twelve
-//123  | onehundred and twenty three
-//1234 | onethousand twohundred and thirty-four
-//12345 | twelvethousand threehundred and fourty-five
-//123456 | onehundred and twenty-three thousand fifty-six
-//1 234 567 | one million twohundred thirty-four thousand five hundred sixty-seven
-
-// 1 000 000 000
-// The groups of 3 never change. Use this as a base. You need to make sure everything is paired in groups of three.
-
-//10 000
-//1 000
 
 export default numberToWords;

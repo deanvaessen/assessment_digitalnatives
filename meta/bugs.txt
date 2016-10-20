@@ -1,1 +1,3 @@
-Enter key does not work with Formous.
+*Enter key does not work with Formous for some reason (it doesn't refresh the component after the translation call,
+even though it does fetch what it needs perfectly). Even doesn't work with with a forced React refresh/rerender.
+Workaround: e.preventDefault();

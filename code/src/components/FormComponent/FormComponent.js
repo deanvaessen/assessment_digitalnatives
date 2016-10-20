@@ -2,7 +2,8 @@
  * [_FormComponent.js]
  * Define the FormComponent code here
  ******************************/
-/*eslint-disable */
+
+/* eslint react/prop-types: 0 */
 
 /**
 * Dependencies
@@ -17,37 +18,46 @@ import translateInput from './../../helpers/translateInput';
  * Component
  */
 
- class ErrorText extends React.Component {
-	 render() {
-		 return <div style={{ color: '#f00' }}>
-			 {this.props.errorText}
-		 </div>
-	 }
+class ErrorText extends React.Component {
+	render() {
+		return <div style={{color : '#f00' }}>
+					{this.props.errorText}
+				</div>;
+	}
  }
+
+ ErrorText.propTypes = {
+	// errorText : React.PropTypes.string
+	// Prop validation is already done through Formous
+};
 
 class FormComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		//this.translateInput = this.translateInput.bind(this);
+		this.handleKeyPress = this.handleKeyPress.bind(this);
 		this.mutateComponent = this.mutateComponent.bind(this);
+		this.shouldHideTranslationHeader = true;
 	}
 
 	componentWillMount() {
 	}
 
 	componentDidMount() {
-		console.log(this.props)
 	}
 
 	componentWillReceiveProps(nextProps) {
 			this.props.setDefaultValues({
-				arabic: '',
-				english:  '',
+				arabic : '',
+				english : '',
+				shouldHideTranslationHeader : true
 			});
 	}
 
 	handleSubmit(formStatus, fields) {
+		// Initial state
+		let fieldState = this.props.fields;
+
 		if (!formStatus.touched) {
 			alert('Please fill out the form.');
 			return;
@@ -58,51 +68,69 @@ class FormComponent extends React.Component {
 			return;
 		}
 
+		if (this.props.fields.arabic.value.replace(/ /g, '') == '') {
+			alert('Please fill in a number');
+			return;
+		}
+
 		// No errors found, continue.
 
-		// Initial state
-		let fieldState = this.props.fields;
 
 		// Mutate
 		translateInput(fieldState, (result) => this.mutateComponent(result));
+	}
 
-
+	handleKeyPress(e) {
+		if (e.key === 'Enter') {
+			// Prevent enter key, Formous doesn't seem to like the enter key
+			e.preventDefault();
+		}
 	}
 
 	mutateComponent(payload){
-		console.log("FormComponent__mutateComponent: init payload:");
-
 		// Pass back into the view
 		this.setState(this.props.fields.english = {
 			value : payload.english.value,
 			events : this.props.fields.english.events,
-			valid : this.props.fields.english.valid,
+			valid : this.props.fields.english.valid
 		});
+
+		this.shouldHideTranslationHeader = false;
 	}
 
 	render() {
-			const {
-			fields: { arabic, english },
-			formSubmit,
-		} = this.props;
-		return (
-			<div className="FormComponent__container">
-				<div className="FormComponent__title"><h1>Translation, please</h1></div>
 
-				 <form onSubmit={formSubmit(this.handleSubmit)}>
+		/*eslint-disable */
+		const {
+			fields : { arabic, english },
+			formSubmit
+		} = this.props;
+		/*eslint-enable */
+
+		return (
+		<div className="FormComponent__outerContainer">
+			<div className="FormComponent__title"><h1>Translation, please</h1></div>
+			<div className="FormComponent__innerContainer">
+
+				<form onSubmit={formSubmit(this.handleSubmit)}>
 					<div className="FormComponent__form">
 						<div className="FormComponent__input">
 							<div className="FormComponent__arabic" >
+								<h5>Arabic numeral input:</h5>
 								<input
 									placeholder="Arabic numeral"
 									type="text"
 									value={arabic.value}
+									onKeyPress={this.handleKeyPress}
 									{ ...arabic.events }
 								/>
 								<ErrorText { ...arabic.failProps } />
 							</div>
 							<div className="FormComponent__english" >
-								<h5>Your translation:</h5> <p>{this.props.fields.english.value}</p>
+								<h5 className={this.shouldHideTranslationHeader ? 'hidden' : ''}>
+									Your translation:
+								</h5>
+								<p>{this.props.fields.english.value}</p>
 							</div>
 						</div>
 					</div>
@@ -112,48 +140,53 @@ class FormComponent extends React.Component {
 						</div>
 				</form>
 			</div>
+		</div>
 		);
 	}
-}
+};
+
+FormComponent.propTypes = {
+	// Prop validation is already done through Formous
+};
 
 const formousOptions = {
-	fields: {
-		arabic: {
-			tests: [
+	fields : {
+		arabic : {
+			tests : [
 				{
-					critical: true,
-					failProps: {
-						errorText: 'Arabic should be a number',
+					critical : true,
+					failProps : {
+						errorText : 'Arabic should be a number'
 					},
 					test(value) {
 						return /^\d*$/.test(value);
-					},
-				},
-			],
-		},
-		english: {
-			tests: [
-				{
-					critical: true,
-					failProps: {
-						errorText: 'English should be in letters!',
-					},
-					test(value) {
-						return /^[a-zA-Z-]*$/.test(value);
-					},
-				},
-				{
-					critical: true,
-					failProps: {
-						errorText: 'English should be in letters!',
-					},
-					test(value) {
-						return /^[a-zA-Z-]*$/.test(value);
-					},
+					}
 				}
-			],
+			]
 		},
-	},
+		english : {
+			tests : [
+				{
+					critical : true,
+					failProps : {
+						errorText : 'English should be in letters!'
+					},
+					test(value) {
+						return /^[a-zA-Z-]*$/.test(value);
+					}
+				},
+				{
+					critical : true,
+					failProps : {
+						errorText : 'English should be in letters!'
+					},
+					test(value) {
+						return /^[a-zA-Z-]*$/.test(value);
+					}
+				}
+			]
+		}
+	}
 };
 
-export default Formous(formousOptions)(FormComponent)
+export default Formous(formousOptions)(FormComponent);
