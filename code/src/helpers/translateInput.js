@@ -35,6 +35,8 @@ let numberToWords = (input, callback) => {
 				const x = lengthAfter;
 
 				switch (true) {
+					case (x < 3):
+						return '';
 					case (x >= 3 && x < 6):
 						return ' thousand and ';
 					case (x < 9):
@@ -98,12 +100,16 @@ let numberToWords = (input, callback) => {
 			},
 
 			addThousands(originalArray, index) {
+
+				console.log(originalArray);
+
+				// Define the entire thousandsArray
 				let thousandsArray = helpers.reverse(originalArray);
 
 				thousandsArray = helpers.divideInto(thousandsArray, 3);
-
 				thousandsArray = helpers.reverse(thousandsArray);
 				console.log('thousandsArray: ', thousandsArray);
+
 
 				let itemCount = 0;
 
@@ -112,11 +118,16 @@ let numberToWords = (input, callback) => {
 					itemCount = itemCount + item.length;
 				});
 
-				console.log('done, you have ' + itemCount + ' items in your array');
+				// Remove the array that you want to find the trail of from the count
+				// (so you know how many are AFTER it)
+				itemCount = itemCount - thousandsArray[index].length;
 
-				let firstThousand = wordDefinitions.thousands(itemCount - 1);
+				console.log('done, you have ' + itemCount + ' items after your current array item');
 
-				console.log(firstThousand);
+				const inbetween = wordDefinitions.thousands(itemCount);
+
+				console.log(inbetween);
+				return inbetween;
 
 				//let word =
 			}
@@ -145,20 +156,56 @@ let numberToWords = (input, callback) => {
 			}
 		});
 
+		console.log(inputArray);
+
 		// 4. Map each item to a definition
 		let translation = inputArray.map(helpers.matchDefinitions);
 
 		// 5. Add thousands
-		helpers.addThousands(originalArray);
+		//helpers.addThousands(originalArray);
 
 		// 6. Reverse it again
 		translation = helpers.reverse(translation);
 
+		// Filter empty
+		translation = translation.filter(Boolean);
+		console.log('teeeest ', translation);
+
+		// 7. Add in-between-labels
+		const translationItems = translation.length;
+
+		translation.forEach(function (item, index) {
+			console.log('---------');
+			console.log(translationItems);
+			console.log(index);
+			console.log('---------');
+			//If it's the last item, don't run the check (unless there is only one)
+			if (index + 1 == translationItems && translationItems != 1){
+				return;
+			}
+			translation.splice(index + 1, 0, helpers.addThousands(originalArray, index));
+		});
+
 		console.log(translation);
+
+		// 8. Clean up
+		if (translation.length == 2) {
+			// If there are only 2 items in the array, you don't need the "and part".
+			translation = translation.join(' ');
+			translation = translation.split(' and');
+			translation = translation[0];
+
+			// Remove duplicate whitespaces
+			translation = translation.replace(/\s+/g, ' ');
+			console.log(translation);
+		} else {
+			translation = translation.join(' ');
+			translation = translation.replace(/\s+/g, ' ');
+		}
 
 		const result = {
 			english : {
-				value : translation.join(' ')
+				value : translation
 			}
 		};
 

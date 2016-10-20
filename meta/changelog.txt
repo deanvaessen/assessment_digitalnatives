@@ -4,6 +4,4 @@
 19/10/2016 - 0.0.4: Component logic cleaned up.
 20/10/2016 - 0.0.5: Translation 0-999 OK.
 20/10/2016 - 0.0.6: Added sketch for "in between labels" (e.g: "one THOUSAND AND three"). See "addThousands".
-
-
-Note: formous does not det
+20/10/2016 - 0.0.7: 
