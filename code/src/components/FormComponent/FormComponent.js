@@ -1,14 +1,16 @@
 /*******************************
  * [_FormComponent.js]
- * Define the root component code here
+ * Define the FormComponent code here
  ******************************/
 /*eslint-disable */
+
 /**
 * Dependencies
 */
 import React from 'react';
 import Formous from 'formous';
 require('./FormComponent.scss');
+import translateInput from './../../helpers/translateInput';
 
 
 /**
@@ -27,7 +29,7 @@ class FormComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		this.translateInput = this.translateInput.bind(this);
+		//this.translateInput = this.translateInput.bind(this);
 		this.mutateComponent = this.mutateComponent.bind(this);
 	}
 
@@ -43,7 +45,7 @@ class FormComponent extends React.Component {
 				arabic: '',
 				english:  '',
 			});
-		}
+	}
 
 	handleSubmit(formStatus, fields) {
 		if (!formStatus.touched) {
@@ -62,20 +64,9 @@ class FormComponent extends React.Component {
 		let fieldState = this.props.fields;
 
 		// Mutate
-		this.translateInput(fieldState, (result) => this.mutateComponent(result));
+		translateInput(fieldState, (result) => this.mutateComponent(result));
 
 
-	}
-
-	translateInput(input, cb){
-		console.log("FormComponent__translateInput: init payload:");
-		console.log(input);
-
-		const arabic = input.arabic.value;
-
-		input.english.value = 'sometranslation';
-
-		cb(input);
 	}
 
 	mutateComponent(payload){
@@ -83,12 +74,6 @@ class FormComponent extends React.Component {
 		console.log(payload);
 
 		// Pass back into the view
-		this.setState(this.props.fields.arabic = {
-			value : payload.arabic.value,
-			events : payload.arabic.events,
-			valid : payload.arabic.valid,
-		});
-
 		this.setState(this.props.fields.english = {
 			value : payload.english.value,
 			events : payload.english.events,
@@ -134,6 +119,19 @@ class FormComponent extends React.Component {
 
 const formousOptions = {
 	fields: {
+		arabic: {
+			tests: [
+				{
+					critical: true,
+					failProps: {
+						errorText: 'Arabic should be a number',
+					},
+					test(value) {
+						return /^\d*$/.test(value);
+					},
+				},
+			],
+		},
 		english: {
 			tests: [
 				{
@@ -156,25 +154,7 @@ const formousOptions = {
 				}
 			],
 		},
-
-		arabic: {
-			tests: [
-				{
-					critical: true,
-					failProps: {
-						errorText: 'Arabic should be a number',
-					},
-					test(value) {
-						return /^\d*$/.test(value);
-					},
-				},
-			],
-		},
 	},
 };
 
-FormComponent.defaultProps = {
-};
-
 export default Formous(formousOptions)(FormComponent)
-//export default FormComponent;
