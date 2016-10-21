@@ -8,3 +8,4 @@
 20/10/2016 - 0.0.8: Cleaned up, fixed last minute bugs
 20/10/2016 - 0.0.9: Misc. cleanup.
 21/10/2016 - 0.1.0: Fixed bug with translation of larger numbers.
+21/10/2016 - 0.1.1: More general makeup of the component elements and cleaned up translateInput.

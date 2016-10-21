@@ -75,7 +75,6 @@ class FormComponent extends React.Component {
 
 		// No errors found, continue.
 
-
 		// Mutate
 		translateInput(fieldState, (result) => this.mutateComponent(result));
 	}
@@ -88,9 +87,17 @@ class FormComponent extends React.Component {
 	}
 
 	mutateComponent(payload){
+
+		// Support to capitalise result
+		function capitaliseFirstLetter(string) {
+			return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+
+		const translation = capitaliseFirstLetter(payload.english.value);
+
 		// Pass back into the view
 		this.setState(this.props.fields.english = {
-			value : payload.english.value,
+			value : translation,
 			events : this.props.fields.english.events,
 			valid : this.props.fields.english.valid
 		});
@@ -116,7 +123,7 @@ class FormComponent extends React.Component {
 					<div className="FormComponent__form">
 						<div className="FormComponent__input">
 							<div className="FormComponent__arabic" >
-								<h5>Arabic numeral input:</h5>
+								<h4 className="header">Arabic numeral input:</h4>
 								<input
 									placeholder="Arabic numeral"
 									type="text"
@@ -126,17 +133,26 @@ class FormComponent extends React.Component {
 								/>
 								<ErrorText { ...arabic.failProps } />
 							</div>
+
+							<hr className={this.shouldHideTranslationHeader ? 'hidden' : ''} />
+
 							<div className="FormComponent__english" >
-								<h5 className={this.shouldHideTranslationHeader ? 'hidden' : ''}>
+								<h4 className={this.shouldHideTranslationHeader ? 'hidden header' : 'header'}>
 									Your translation:
-								</h5>
+								</h4>
+								<br />
+
 								<p>{this.props.fields.english.value}</p>
 							</div>
 						</div>
 					</div>
 						<div className="FormComponent__buttons">
 							<button className="FormComponent__submit" type="submit">Submit</button>
-							<button className="FormComponent__clear" type="button" onClick={this.props.clearForm}>Clear</button>
+							<button className="FormComponent__clear" type="button" onClick=
+							{(event) => {
+								this.shouldHideTranslationHeader = true;
+								this.props.clearForm();
+							}}>Clear</button>
 						</div>
 				</form>
 			</div>

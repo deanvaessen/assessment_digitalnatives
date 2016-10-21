@@ -2,7 +2,7 @@
  * [_translateInput.js]
  * Define the translation code here
  ******************************/
-/*eslint-disable */
+
 let numberToWords = (input, callback) => {
 
 	const arabic = input.arabic.value;
@@ -30,23 +30,23 @@ let numberToWords = (input, callback) => {
 					case (x < 3):
 						return '';
 					case (x >= 3 && x < 5):
-						return ' thousand and ';
+						return ' thousand ';
 					case (x < 9):
-						return ' million and ';
+						return ' million ';
 					case (x < 12):
-						return ' billion and ';
+						return ' billion ';
 					case (x < 15):
-						return ' trillion and ';
+						return ' trillion ';
 					case (x < 18):
-						return ' quadrillion and ';
+						return ' quadrillion ';
 					case (x < 21):
-						return ' quintillion and ';
+						return ' quintillion ';
 					case (x < 24):
-						return ' sextillion and ';
+						return ' sextillion ';
 					case (x < 26):
-						return ' octillion and ';
+						return ' octillion ';
 					case (x < 29):
-						return ' nonillion and ';
+						return ' nonillion ';
 					case (x > 29):
 						return 'Dude, big number. Tone it down.';
 					default:
@@ -94,7 +94,7 @@ let numberToWords = (input, callback) => {
 				/*
 				 * Primer: Here we add the "in-between-labels".
 				 * To do this, we take the amount of items *after* the current block (passed to us)
-				 * This way you find out how big the number is that you're describing
+				 * This way you input out how big the number is that you're describing
 				 */
 
 				// 4. Match the value to a label and return it
@@ -102,10 +102,10 @@ let numberToWords = (input, callback) => {
 			}
 		};
 
+
 	/**
 	* Process the input
 	*/
-
 		/*
 		 * Primer
 		 * This function takes an input array, reverses it (to free up the first digit) and divides it into blocks of 3.
@@ -114,12 +114,11 @@ let numberToWords = (input, callback) => {
 		 * English translations can be thought of as descriptions for blocks of 3 numbers
 		 * Aditionally, there are "in-between-labels" such as "thousand and"
 		 * E.g.: "400 240" -> "fourhundred *thousand and*  twohundred fourty"
+		 * This labels are passed on at the end by calculating how many numbers are after the current block.
 		 */
 
 		// 1. Throw the entire input into an array
-		const originalArray = [...arabic];
 		let inputArray = [...arabic];
-
 
 		// 2. Reverse it so that it is spaced into neat blocks and only the first section of the number has gaps in the array
 		// (so that we can name it properly when we add thousands)
@@ -135,8 +134,8 @@ let numberToWords = (input, callback) => {
 		});
 
 		// 4. Map each item to a definition
-		let untranslatedArray  = inputArray;
-		let translation = inputArray.map(helpers.matchDefinitions);
+		let untranslatedArray = inputArray,
+			translation = inputArray.map(helpers.matchDefinitions);
 
 		// 5. Reverse it again
 		translation = helpers.reverse(translation);
@@ -148,37 +147,30 @@ let numberToWords = (input, callback) => {
 		const translationItems = translation.length;
 
 		translation.forEach(function (item, index) {
-			console.log("INIT!!!")
-			// If it's the last item, don't run the check (unless there is only one)
-			if (index + 1 == translationItems && translationItems != 1){
-				return;
-			}
 
-			let blockIndex = index;
+			let blockIndex = index,
+				itemCount = 0;
 
-			let itemCount = 0;
-
+			// Grab the array as it was before I translated it
 			untranslatedArray.forEach(function (item, index) {
 				if (index > blockIndex){
 					itemCount = itemCount + untranslatedArray[index].length;
 				}
-				console.log(item, index)
 			});
 
-			console.log("you have this many items after this block: ", itemCount)
-
-			console.log(item, index)
-			console.log(untranslatedArray)
-			console.log(translation)
-
-
 			// Plug in the labels
-			const label =  helpers.addInBetweens(itemCount);
+			let label = helpers.addInBetweens(itemCount);
+
+			// If it's the last item in the array, don't add an 'and', otherwise do
+			if (index + 1 == translationItems && translationItems != 1){
+				//don't do it
+			} else {
+				label = label + 'and';
+			}
+
 			if (label != '') {
-				console.log(item, index)
 				translation[index] = item + label;
 			}
-			//translation.splice(translation.indexOf(item) + 1, 0, helpers.addInBetweens(itemCount));
 		});
 
 
