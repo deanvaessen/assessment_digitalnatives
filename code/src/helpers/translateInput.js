@@ -2,7 +2,7 @@
  * [_translateInput.js]
  * Define the translation code here
  ******************************/
-
+/*eslint-disable */
 let numberToWords = (input, callback) => {
 
 	const arabic = input.arabic.value;
@@ -29,7 +29,7 @@ let numberToWords = (input, callback) => {
 				switch (true) {
 					case (x < 3):
 						return '';
-					case (x >= 3 && x < 6):
+					case (x >= 3 && x < 5):
 						return ' thousand and ';
 					case (x < 9):
 						return ' million and ';
@@ -90,30 +90,12 @@ let numberToWords = (input, callback) => {
 				].join(''); //Join them
 			},
 
-			addInBetweens(originalnput, index) {
+			addInBetweens(itemCount) {
 				/*
 				 * Primer: Here we add the "in-between-labels".
-				 * To do this, find the amount of array items *after* the current block
+				 * To do this, we take the amount of items *after* the current block (passed to us)
 				 * This way you find out how big the number is that you're describing
 				 */
-
-				// 1. Define an array that we will use to find out where we need to add a label
-				let labelArray = helpers.reverse(originalnput);
-
-				labelArray = helpers.divideInto(labelArray, 3);
-				labelArray = helpers.reverse(labelArray);
-
-				// 2. Count the amount of items that we have in the arrays
-				let itemCount = 0;
-
-				labelArray.forEach(function (item, index) {
-					itemCount = itemCount + item.length;
-				});
-
-				// 3. Find out how many items there are *after* this  block
-
-				// Remove the array block itself from the total to find remaining after it
-				itemCount = itemCount - labelArray[index].length;
 
 				// 4. Match the value to a label and return it
 				return wordDefinitions.thousands(itemCount);
@@ -153,6 +135,7 @@ let numberToWords = (input, callback) => {
 		});
 
 		// 4. Map each item to a definition
+		let untranslatedArray  = inputArray;
 		let translation = inputArray.map(helpers.matchDefinitions);
 
 		// 5. Reverse it again
@@ -165,19 +148,43 @@ let numberToWords = (input, callback) => {
 		const translationItems = translation.length;
 
 		translation.forEach(function (item, index) {
+			console.log("INIT!!!")
 			// If it's the last item, don't run the check (unless there is only one)
 			if (index + 1 == translationItems && translationItems != 1){
 				return;
 			}
 
+			let blockIndex = index;
+
+			let itemCount = 0;
+
+			untranslatedArray.forEach(function (item, index) {
+				if (index > blockIndex){
+					itemCount = itemCount + untranslatedArray[index].length;
+				}
+				console.log(item, index)
+			});
+
+			console.log("you have this many items after this block: ", itemCount)
+
+			console.log(item, index)
+			console.log(untranslatedArray)
+			console.log(translation)
+
+
 			// Plug in the labels
-			translation.splice(index + 1, 0, helpers.addInBetweens(originalArray, index));
+			const label =  helpers.addInBetweens(itemCount);
+			if (label != '') {
+				console.log(item, index)
+				translation[index] = item + label;
+			}
+			//translation.splice(translation.indexOf(item) + 1, 0, helpers.addInBetweens(itemCount));
 		});
 
 
 		// 8. Clean up
-		if (translation.length == 2) {
-			// If there are only 2 items in the array, you don't need the "and part".
+		if (translation.length == 1) {
+			// If there is only 1 item in the array, you don't need the "and part".
 			translation = translation.join(' ');
 			translation = translation.split(' and');
 			translation = translation[0];

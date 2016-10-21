@@ -21,6 +21,7 @@
 	.FormComponent__title {
 		text-align: center;
 		@include rem(padding, 20px 20px);
+		text-shadow:0px 1px 0px #585114;
 		background: #C87D08;
 		color: white;
 	}
@@ -45,6 +46,7 @@
 
 			.FormComponent__english {
 				@include rem(margin, 30px 0 40px 0);
+
 				h5, p {
 					display: inline-block;
 				}

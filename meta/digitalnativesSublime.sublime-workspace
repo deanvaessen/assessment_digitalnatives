@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"label",
+				"labelArray〔variable〕"
+			],
+			[
+				"block",
+				"blockIndex"
+			],
+			[
+				"trans",
+				"translations"
+			],
+			[
+				"curr",
+				"currentIndex"
+			],
+			[
+				"render",
+				"renderIntoDocument"
+			],
+			[
+				"Form",
+				"FormComponent〔variable〕"
+			],
+			[
 				"translat",
 				"translationItems"
 			],
@@ -490,30 +514,6 @@
 			[
 				"dbq",
 				"dbQueryResult"
-			],
-			[
-				"dbQ",
-				"dbQueryResult"
-			],
-			[
-				"bo",
-				"Boolean"
-			],
-			[
-				"activate",
-				"activateLoadBlog"
-			],
-			[
-				"info__heading",
-				"info__heading--lead"
-			],
-			[
-				"aja",
-				"ajaxform"
-			],
-			[
-				"sub",
-				"subject"
 			]
 		]
 	},
@@ -547,7 +547,39 @@
 			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/MainTest.js",
 			"settings":
 			{
-				"buffer_size": 601,
+				"buffer_size": 592,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/FormComponentTest.js",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/helpers/shallowRenderHelper.js",
+			"settings":
+			{
+				"buffer_size": 896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/karma.conf.js",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/loadtests.js",
+			"settings":
+			{
+				"buffer_size": 252,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +587,7 @@
 			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/helpers/translateInput.js",
 			"settings":
 			{
-				"buffer_size": 5842,
+				"buffer_size": 6124,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,8 +595,24 @@
 			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/FormComponent/FormComponent.scss",
 			"settings":
 			{
-				"buffer_size": 1803,
+				"buffer_size": 1826,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/archive/snippets.js",
+			"settings":
+			{
+				"buffer_size": 2951,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import chai from \"chai\";\nimport jsxChai from \"jsx-chai\";\n\nimport React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport TestUtils from \"react-addons-test-utils\";\nimport shallowTestUtils from \"react-shallow-testutils\";\n\nimport TodoList from \"app/components/todolist\";\nimport Todo from \"app/components/todo\";\n\nchai.use(jsxChai);\n\nvar expect = chai.expect;\n\ndescribe(\"TodoList\", function(){\n\n	var renderer, todolist;\n\n	beforeEach(function(){\n		var todoTexts = [\"eat breakfast\", \"have lunch\", \"go out to dinner\"];\n		renderer = TestUtils.createRenderer();\n\n		renderer.render(\n			<TodoList todoTexts={ todoTexts } />\n		);\n\n		todolist = renderer.getRenderOutput();\n	});\n\n	it(\"renders a todolist\", function(){\n		expect(todolist.props.className).to.equal(\"todo-list\");\n	});\n\n	it(\"greets the user\", function(){\n		var greetingSpan = todolist.props.children[0];\n\n		expect(greetingSpan.props.className).to.equal(\"greeting\");\n	});\n\n	it(\"will render three todos\", function(){\n		var todos = shallowTestUtils.findAllWithType(todolist, Todo);\n		expect(todos.length).to.equal(3);\n\n		var dinnerTodo = todos[2];\n		expect(dinnerTodo).to.deep.equal(\n			<Todo key=\"todo-2\" text=\"go out to dinner\" />\n			);\n	});\n});",
+			"settings":
+			{
+				"buffer_size": 1196,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -624,6 +672,10 @@
 				"Indentation: Convert to Tabs"
 			],
 			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
 				"quotes",
 				"BracketHighlighter: Swap Quotes"
 			],
@@ -650,10 +702,6 @@
 			[
 				"javasc",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"jsx",
-				"Set Syntax: JSX"
 			],
 			[
 				"white sp",
@@ -917,6 +965,9 @@
 	],
 	"file_history":
 	[
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/FormComponent.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/loadtests.js",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/config/ConfigTest.js",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/root.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PartyScreen/PartyScreen.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal/react-partyscreen/project/code/src/components/PartyScreen/PartyScreen.js",
@@ -1041,10 +1092,7 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/dev.js",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/base.js",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/cfg/test.js",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/UserRequirementsScore/UserRequirementsScore.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/root.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/models/awesomeperson.js",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/UserRequirementsScore/UserRequirementsScore.js"
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/indivizo/indivizo-test/src/src/components/UserRequirementsScore/UserRequirementsScore.scss"
 	],
 	"find":
 	{
@@ -1478,13 +1526,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1590,7 +1638,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1606,8 +1654,8 @@
 						"selection":
 						[
 							[
-								1831,
-								1831
+								2707,
+								2707
 							]
 						],
 						"settings":
@@ -1621,8 +1669,8 @@
 								{
 									"1":
 									[
-										2053,
-										2054
+										2706,
+										2707
 									]
 								},
 								"icon":
@@ -1637,8 +1685,234 @@
 								{
 									"1":
 									[
-										1801,
-										1802
+										2693,
+										2694
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1503.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/MainTest.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/FormComponentTest.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								713,
+								713
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										712,
+										713
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										698,
+										699
 									]
 								},
 								"unmatched":
@@ -1703,32 +1977,134 @@
 								"bh_tag_close",
 								"bh_tag_content"
 							],
-							"is_xml": false,
 							"syntax": "Packages/JSX/JSX.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/components/MainTest.js",
+					"buffer": 5,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/helpers/shallowRenderHelper.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 601,
+						"buffer_size": 896,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								331,
-								331
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/karma.conf.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
 							]
 						],
 						"settings":
@@ -1742,8 +2118,8 @@
 								{
 									"1":
 									[
-										331,
-										332
+										251,
+										252
 									]
 								},
 								"icon":
@@ -1758,8 +2134,8 @@
 								{
 									"1":
 									[
-										311,
-										312
+										233,
+										234
 									]
 								},
 								"unmatched":
@@ -1830,49 +2206,58 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/helpers/translateInput.js",
+					"buffer": 7,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/test/loadtests.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5842,
+						"buffer_size": 252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								170,
-								170
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										11,
+										12
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										0,
+										1
+									]
 								},
 								"unmatched":
 								{
-									"1":
-									[
-										168,
-										169
-									]
 								}
 							},
 							"bracket_highlighter.regions":
@@ -1933,43 +2318,36 @@
 								"bh_tag_close",
 								"bh_tag_content"
 							],
-							"is_xml": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 5,
-					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/FormComponent/FormComponent.scss",
+					"buffer": 8,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/helpers/translateInput.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1803,
+						"buffer_size": 6124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1177,
-								1177
+								2998,
+								2998
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -1977,8 +2355,8 @@
 								{
 									"1":
 									[
-										1176,
-										1177
+										3762,
+										3763
 									]
 								},
 								"icon":
@@ -1993,8 +2371,134 @@
 								{
 									"1":
 									[
-										1090,
-										1091
+										2563,
+										2564
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/components/FormComponent/FormComponent.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1014,
+								1014
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1024,
+										1025
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1005,
+										1006
 									]
 								},
 								"unmatched":
@@ -2062,14 +2566,224 @@
 							"syntax": "Packages/Sunrise Theme/Langs/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1083.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 10,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/archive/snippets.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1915,
+								1915
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1653.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								119
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "D:\\1 - CORTANA\\3 - Projects\\18 - Coding\\src\\Web\\Challenges\\digitalnatives\\project\\code\\src\\components",
+							"is_xml": false,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/stylesupport/partials/_buttons.scss",
 					"semi_transient": false,
 					"settings":
@@ -2168,11 +2882,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 13,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/stylesupport/partials/_mixins.scss",
 					"semi_transient": false,
 					"settings":
@@ -2286,11 +3000,11 @@
 						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 14,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/src/stylesupport/partials/_variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -2389,7 +3103,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -2399,7 +3113,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 9,
+					"buffer": 15,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/.eslintrc",
 					"semi_transient": false,
 					"settings":
@@ -2514,11 +3228,11 @@
 						"translation.y": 164.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 16,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/digitalnatives/project/code/cfg/defaults.js",
 					"semi_transient": false,
 					"settings":
@@ -2617,7 +3331,7 @@
 						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
@@ -2725,7 +3439,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"dfw_is_in_fs": true
