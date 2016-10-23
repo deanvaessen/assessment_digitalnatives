@@ -4,16 +4,17 @@
  ******************************/
 
 /**
- * Dependencies
+ * { Dependencies }
  */
 
  /**
- * Function
+ * { Function }
  */
  const index = (function () {
 
 			/**
-			* Support helpers for typography
+			 * { Typography }
+			 * Support helpers for typography
 			*/
 			const typography = {
 

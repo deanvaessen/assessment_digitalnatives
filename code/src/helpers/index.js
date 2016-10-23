@@ -4,13 +4,13 @@
  ******************************/
 
 /**
-* Dependencies
+* { Dependencies }
 */
 import translateNumberHelper from './translateNumber';
 import MutationHelper from './mutation';
 
 /**
-* Function
+* { Function }
 */
 const index = (function () {
 

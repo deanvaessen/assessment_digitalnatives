@@ -3,17 +3,20 @@
  * Define the translation code here
  ******************************/
  /**
- * Dependencies
+ * { Dependencies }
  */
 
 // General helpers
 import mutationHelpers from './mutation';
 
 
+/**
+ * { Function }
+ */
 let numberToWords = (input, callback) => {
 
 	/**
-	 * Definitions
+	 * { Definitions }
 	 */
 	const arabic = input.arabic.value;
 
@@ -24,6 +27,7 @@ let numberToWords = (input, callback) => {
 	};
 
 	/**
+	 * { Support }
 	 * Support functions for main function down the page
 	 */
 		const wordDefinitions = {
@@ -88,6 +92,7 @@ let numberToWords = (input, callback) => {
 
 			matchDefinitions([singles, tens, hundreds]) {
 				// Array position defines what it is. 0 = singles, 1 = tens, 2 = hundreds
+				// This function looks at that the singles, tens and hundreds are and returns new array with the matched values
 
 				return [
 				// Result for the hundreds
@@ -97,12 +102,16 @@ let numberToWords = (input, callback) => {
 
 				// Result for the singles and tens
 					// If single digit is 0, return the definition for the base tens (2 digit) number (e.g: 20, 30)
-					// Else return definition of the base tens + '-' + single digit
-					// If no arguments, return blank
+					// Else it checks if there are tens available, if so return definition of the base tens + '-'
+					// If there are no tens available, it results in nothing ( '' ).
 					singles == 0 ? wordDefinitions.tens[tens] :
-					wordDefinitions.tens[tens] && wordDefinitions.tens[tens] + '-' || '',
+					wordDefinitions.tens[tens] ? wordDefinitions.tens[tens] + '-' : '',
+						//wordDefinitions.tens[tens] && wordDefinitions.tens[tens] + '-' || '',
 
-				// Attach the tens and singles if available, otherwise just take the singles
+				// On this step it adds the singles and tens together, then checks if that results in something.
+					// Else it tries to match a single
+					// E.g.: single 1, tens 2 -> Single + Tens = 12 because it's a string. Array converts and finds 'twelve'.
+					// If single 1, tens 3 -> Single + Tens = 31 -> Does not resolve, thus continues ('||') and find single.
 					wordDefinitions.singles[tens + singles] || wordDefinitions.singles[singles]
 				].join(''); //Join them
 			},
@@ -121,11 +130,11 @@ let numberToWords = (input, callback) => {
 
 
 	/**
-	* Main function
+	* { Main function }
 	* Process the input and translate into a word
 	*/
 		/*
-		 * Primer
+		 * { Primer }
 		 * This function takes an input array, reverses it (to free up the first digit) and divides it into blocks of 3.
 		 * It then tries to map definitions based on the number that has and adds extra words, see below.
 		 * Blocks of three because that makes it easy to translate.
@@ -135,9 +144,13 @@ let numberToWords = (input, callback) => {
 		 * This labels are passed on at the end by calculating how many numbers are after the current block.
 		 */
 
-		// 0. Filter out a 'zero'
+		// 0. Throw the entire input into an array
+		let inputArray = [...arabic];
+
+		// 1. Filter out a few exceptions and edgecases
 		if (arabic === '0'){
 			result.english.value = 'zero';
+
 			if (callback){
 				callback(result);
 			} else return result;
@@ -145,8 +158,22 @@ let numberToWords = (input, callback) => {
 			return;
 		}
 
-		// 1. Throw the entire input into an array
-		let inputArray = [...arabic];
+			// Fix edgecase of "00000222"
+			// Remove all the zero's until you find something else, then stop.
+			while (inputArray[0] === '0'){
+				inputArray.shift();
+			};
+
+			// Oops, we removed them all, there was never a number to begin with except zeros.
+			if (inputArray.length === 0) {
+				result.english.value = 'zero';
+
+				if (callback){
+					callback(result);
+				} else return result;
+
+				return;
+			}
 
 		// 2. Reverse it so that it is spaced into neat blocks and only the first section of the number has gaps in the array
 		// (so that we can name it properly when we add thousands)

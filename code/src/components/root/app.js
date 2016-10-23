@@ -4,7 +4,7 @@
  ******************************/
 
 /**
-* Dependencies
+* { Dependencies }
 */
 
 require('normalize.css/normalize.css');
@@ -16,7 +16,7 @@ import FormComponent from './../FormComponent/FormComponent';
 
 
 /**
- * Component
+ * { Component }
  */
 
 class AppComponent extends React.Component {

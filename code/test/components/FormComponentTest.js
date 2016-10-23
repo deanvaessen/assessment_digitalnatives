@@ -129,6 +129,14 @@ describe('<FormComponent />', () => {
 				expect: 'zero'
 			},
 			{
+				input: '18',
+				expect: 'eighteen'
+			},
+			{
+				input: '80',
+				expect: 'eighty'
+			},
+			{
 				input: '2145251255',
 				expect: 'two billion and one hundred forty-five million and two hundred fifty-one thousand and two hundred fifty-five'
 			},
@@ -139,6 +147,14 @@ describe('<FormComponent />', () => {
 			{
 				input: '98561478',
 				expect: 'ninety-eight million and five hundred sixty-one thousand and four hundred seventy-eight'
+			},
+			{
+				input: '00000222',
+				expect: 'two hundred twenty-two'
+			},
+			{
+				input: '000',
+				expect: 'zero'
 			}
 		]);
 

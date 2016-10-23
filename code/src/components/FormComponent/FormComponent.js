@@ -6,7 +6,7 @@
 /* eslint react/prop-types: 0 */
 
 /**
-* Dependencies
+* { Dependencies }
 */
 import React from 'react';
 import Formous from 'formous';
@@ -15,7 +15,7 @@ import helpers from './../../helpers/index';
 
 
 /**
- * Component
+ * { Component }
  */
 
 class ErrorText extends React.Component {
