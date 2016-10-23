@@ -1,14 +1,24 @@
 /*******************************
- * [_translateInput.js]
+ * [_translateNumber.js]
  * Define the translation code here
  ******************************/
+ /**
+ * Dependencies
+ */
+
+// General helpers
+import mutationHelpers from './mutation';
+
 
 let numberToWords = (input, callback) => {
 
+	/**
+	 * Definitions
+	 */
 	const arabic = input.arabic.value;
 
 	/**
-	 * Support functions
+	 * Support functions for main function down the page
 	 */
 		const wordDefinitions = {
 			singles : [
@@ -55,6 +65,7 @@ let numberToWords = (input, callback) => {
 			}
 		};
 
+		// Function specific helpers
 		const helpers = {
 			reverse(payload) {
 				return payload.reverse();
@@ -97,14 +108,15 @@ let numberToWords = (input, callback) => {
 				 * This way you input out how big the number is that you're describing
 				 */
 
-				// 4. Match the value to a label and return it
+				// Match the value to a label and return it
 				return wordDefinitions.thousands(itemCount);
 			}
 		};
 
 
 	/**
-	* Process the input
+	* Main function
+	* Process the input and translate into a word
 	*/
 		/*
 		 * Primer
@@ -173,19 +185,23 @@ let numberToWords = (input, callback) => {
 			}
 		});
 
-
 		// 8. Clean up
 		if (translation.length == 1) {
-			// If there is only 1 item in the array, you don't need the "and part".
+
+			// If there is only 1 item in the array, you don't need the "and" part.
 			translation = translation.join(' ');
-			translation = translation.split(' and');
+			translation = translation.split('and');
 			translation = translation[0];
 
-			// Remove duplicate whitespaces
-			translation = translation.replace(/\s+/g, ' ');
+			// Remove duplicate and trailing/leading whitespaces
+			translation = mutationHelpers.typography.removeWhitespaceTrailing(translation);
 		} else {
+
+			// Join the array
 			translation = translation.join(' ');
-			translation = translation.replace(/\s+/g, ' ');
+
+			// Remove duplicate and trailing/leading whitespaces
+			translation = mutationHelpers.typography.removeWhitespaceTrailing(translation);
 		}
 
 		const result = {
@@ -194,7 +210,9 @@ let numberToWords = (input, callback) => {
 			}
 		};
 
-		callback(result);
+		if (callback){
+			callback(result);
+		} else return result;
 };
 
 export default numberToWords;

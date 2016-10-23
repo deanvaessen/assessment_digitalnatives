@@ -5,3 +5,4 @@
 
 ## Getting started
 * Clone, cd code, npm install, npm start
+* For tests: npm test

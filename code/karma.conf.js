@@ -16,6 +16,7 @@ module.exports = function(config) {
     client: {
       mocha: {}
     },
+   //ogLevel: config.LOG_DEBUG,
     singleRun: true,
     reporters: [ 'mocha', 'coverage' ],
     preprocessors: {

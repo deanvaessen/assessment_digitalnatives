@@ -11,7 +11,7 @@
 import React from 'react';
 import Formous from 'formous';
 require('./FormComponent.scss');
-import translateInput from './../../helpers/translateInput';
+import helpers from './../../helpers/index';
 
 
 /**
@@ -44,6 +44,7 @@ class FormComponent extends React.Component {
 	}
 
 	componentDidMount() {
+		// console.log(this.props);
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -75,8 +76,8 @@ class FormComponent extends React.Component {
 
 		// No errors found, continue.
 
-		// Mutate
-		translateInput(fieldState, (result) => this.mutateComponent(result));
+		// Translate and mutate result
+		helpers.translation.number(fieldState, (result) => this.mutateComponent(result));
 	}
 
 	handleKeyPress(e) {
@@ -87,13 +88,8 @@ class FormComponent extends React.Component {
 	}
 
 	mutateComponent(payload){
-
-		// Support to capitalise result
-		function capitaliseFirstLetter(string) {
-			return string.charAt(0).toUpperCase() + string.slice(1);
-		}
-
-		const translation = capitaliseFirstLetter(payload.english.value);
+		const typographyHelp = helpers.mutation.typography,
+			translation = typographyHelp.capitaliseFirstLetter(payload.english.value);
 
 		// Pass back into the view
 		this.setState(this.props.fields.english = {
@@ -127,6 +123,8 @@ class FormComponent extends React.Component {
 								<input
 									placeholder="Arabic numeral"
 									type="text"
+									ref="FormComponent__inputArabic"
+									className="FormComponent__inputArabic"
 									value={arabic.value}
 									onKeyPress={this.handleKeyPress}
 									{ ...arabic.events }
@@ -142,7 +140,7 @@ class FormComponent extends React.Component {
 								</h4>
 								<br />
 
-								<p>{this.props.fields.english.value}</p>
+								<p className="FormComponent__outputEnglish">{this.props.fields.english.value}</p>
 							</div>
 						</div>
 					</div>
