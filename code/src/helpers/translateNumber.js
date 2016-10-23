@@ -138,7 +138,6 @@ let numberToWords = (input, callback) => {
 		// 0. Filter out a 'zero'
 		if (arabic === '0'){
 			result.english.value = 'zero';
-			console.log(result);
 			if (callback){
 				callback(result);
 			} else return result;

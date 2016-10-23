@@ -87,22 +87,23 @@ describe('<FormComponent />', () => {
 
 					// Log the result
 					console.log('');
+					console.log('');
 					console.log('/**');
-					console.log('Sorry, this translation test failed: ');
-					console.log('Input': item.input);
-					console.log('Output': translation.english.value);
-					console.log('Expected': item.expect);
+					console.log('Sorry, this translation test failed:');
+						console.log('	Input: ' + item.input);
+						console.log('	Output: ' + translation.english.value);
+						console.log('	Expected: ' + item.expect);
 				}
 			});
 
 			// Log result
 			console.log('');
 			console.log('');
+			console.log('');
 			console.log('/***');
 			console.log('Translation test results:');
-			console.log('Failed: ' + results.failed.length);
-			console.log('Passed: ' + results.passed.length);
-			console.log('');
+				console.log('	Failed: ' + results.failed.length);
+				console.log('	Passed: ' + results.passed.length);
 			console.log('');
 
 			// Finish test
