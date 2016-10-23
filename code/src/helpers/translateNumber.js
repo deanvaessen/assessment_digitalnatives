@@ -17,6 +17,12 @@ let numberToWords = (input, callback) => {
 	 */
 	const arabic = input.arabic.value;
 
+	let result = {
+		english : {
+			value : null
+		}
+	};
+
 	/**
 	 * Support functions for main function down the page
 	 */
@@ -129,6 +135,17 @@ let numberToWords = (input, callback) => {
 		 * This labels are passed on at the end by calculating how many numbers are after the current block.
 		 */
 
+		// 0. Filter out a 'zero'
+		if (arabic === '0'){
+			result.english.value = 'zero';
+			console.log(result);
+			if (callback){
+				callback(result);
+			} else return result;
+
+			return;
+		}
+
 		// 1. Throw the entire input into an array
 		let inputArray = [...arabic];
 
@@ -195,6 +212,7 @@ let numberToWords = (input, callback) => {
 
 			// Remove duplicate and trailing/leading whitespaces
 			translation = mutationHelpers.typography.removeWhitespaceTrailing(translation);
+			result.english.value = translation;
 		} else {
 
 			// Join the array
@@ -202,13 +220,8 @@ let numberToWords = (input, callback) => {
 
 			// Remove duplicate and trailing/leading whitespaces
 			translation = mutationHelpers.typography.removeWhitespaceTrailing(translation);
+			result.english.value = translation;
 		}
-
-		const result = {
-			english : {
-				value : translation
-			}
-		};
 
 		if (callback){
 			callback(result);
